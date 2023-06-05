@@ -400,7 +400,7 @@ public:
         return counter;
     }
 
-    void addAbonent(Abonent& newAbonent) {
+    void addAbonent(const Abonent& newAbonent) {
         Abonent* buf = new Abonent[counter + 1];
         for (int i = 0; i < counter; i++) {
             buf[i] = abonents[i];
